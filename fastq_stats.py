@@ -44,7 +44,7 @@ def main():
                 
                 # Строка с качеством (индекс 3)
                 elif row_idx == 3:
-                    # Задача 3: Среднее качество на 10-й позиции (индекс 9)
+                    # Среднее качество на 10-й позиции (индекс 9)
                     if len(line) >= 10:
                         quality = ord(line[9]) - 33
                         total_quality_pos_10 += quality
@@ -94,7 +94,7 @@ def main():
                         reads_removed_cnt += 1
                     else:
                         filtered_lengths.append(kept_len)
-                        # Задача 4: Фильтрация по длине >= 60
+                        # Фильтрация по длине >= 60
                         if kept_len >= 60:
                             reads_filtered_len_60 += 1
     
